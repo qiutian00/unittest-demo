@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 9,
-    "tests": 8,
-    "passes": 7,
+    "suites": 10,
+    "tests": 9,
+    "passes": 8,
     "pending": 0,
     "failures": 1,
-    "start": "2019-06-12T06:58:50.755Z",
-    "end": "2019-06-12T06:58:50.842Z",
-    "duration": 87,
-    "testsRegistered": 8,
-    "passPercent": 87.5,
+    "start": "2019-06-12T08:00:21.627Z",
+    "end": "2019-06-12T08:00:21.698Z",
+    "duration": 71,
+    "testsRegistered": 9,
+    "passPercent": 88.88888888888889,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ba205252-e9eb-426d-9c89-66d47213109d",
+      "uuid": "278f3047-0194-4643-ad5c-86931b50b04d",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "67d2647d-e66a-495a-b459-13714681eb0c",
+          "uuid": "59133d1d-8344-4815-a2ff-3ca542f687aa",
           "title": "加法函数的测试",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\add.test.js",
           "file": "\\test\\add.test.js",
@@ -38,7 +38,7 @@
               "title": "1 加 1 应该等于 2",
               "fullTitle": "加法函数的测试 1 加 1 应该等于 2",
               "timedOut": false,
-              "duration": 3,
+              "duration": 2,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: expected 3 to equal 2\n    at Context.<anonymous> (F:/Code/projects/unittest-demo/test/add.test.js:12:29)",
                 "diff": "- 3\n+ 2\n"
               },
-              "uuid": "1e5794ea-34cb-474b-9633-9d9c79cd1613",
-              "parentUUID": "67d2647d-e66a-495a-b459-13714681eb0c",
+              "uuid": "162c71e2-1fc3-4b6f-8aec-19fd26840fbc",
+              "parentUUID": "59133d1d-8344-4815-a2ff-3ca542f687aa",
               "isHook": false,
               "skipped": false
             }
@@ -60,17 +60,56 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "1e5794ea-34cb-474b-9633-9d9c79cd1613"
+            "162c71e2-1fc3-4b6f-8aec-19fd26840fbc"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "abd0f587-0570-45e5-bd92-83184099d9dc",
+          "uuid": "1e1300d8-4bfe-4ba6-8642-2284f8ec7900",
+          "title": "formVerify 验证",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\formVerify.test.js",
+          "file": "\\test\\formVerify.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "手机或者座机验证",
+              "fullTitle": "formVerify 验证 手机或者座机验证",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(_formVerify2.default.phone('13344445555', isSuccess)).to.be.true;",
+              "err": {},
+              "uuid": "ff0a6c51-91f7-40c4-9b79-755c0e63c89a",
+              "parentUUID": "1e1300d8-4bfe-4ba6-8642-2284f8ec7900",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ff0a6c51-91f7-40c4-9b79-755c0e63c89a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "479449d5-745a-4af7-b382-7d24fd29fa70",
           "title": "module",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
           "file": "\\test\\index.test.js",
@@ -79,7 +118,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "7450e4ff-c752-4013-a769-4e6e2868d2fc",
+              "uuid": "c511cb94-24a5-49c9-9c59-7bab519f8851",
               "title": "limit",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -99,15 +138,15 @@
                   "context": null,
                   "code": "lib.limit(10).should.equal(10);\nlib.limit(-1).should.be.equal(0);",
                   "err": {},
-                  "uuid": "10ad2112-3e92-4a9d-8132-938622055742",
-                  "parentUUID": "7450e4ff-c752-4013-a769-4e6e2868d2fc",
+                  "uuid": "eaf8acbe-b3ad-4663-95c9-57658b136f54",
+                  "parentUUID": "c511cb94-24a5-49c9-9c59-7bab519f8851",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "10ad2112-3e92-4a9d-8132-938622055742"
+                "eaf8acbe-b3ad-4663-95c9-57658b136f54"
               ],
               "failures": [],
               "pending": [],
@@ -118,7 +157,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "c14d5329-48a8-4e2c-bb45-0775942ebb9d",
+              "uuid": "7b5466a4-989e-4af6-b677-28a5acdbc48f",
               "title": "async",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -129,7 +168,7 @@
                   "title": "async",
                   "fullTitle": "module async async",
                   "timedOut": false,
-                  "duration": 11,
+                  "duration": 10,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -138,26 +177,26 @@
                   "context": null,
                   "code": "lib.async(function (result) {\n  done();\n});",
                   "err": {},
-                  "uuid": "44a82560-3d71-4308-8cd2-db95fca92d12",
-                  "parentUUID": "c14d5329-48a8-4e2c-bb45-0775942ebb9d",
+                  "uuid": "1aeab9a8-0034-43ce-8782-dd67eba02b3e",
+                  "parentUUID": "7b5466a4-989e-4af6-b677-28a5acdbc48f",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "44a82560-3d71-4308-8cd2-db95fca92d12"
+                "1aeab9a8-0034-43ce-8782-dd67eba02b3e"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 11,
+              "duration": 10,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "2b4e0607-34a4-4f63-912f-7f356ca32127",
+              "uuid": "88596f51-154f-443c-a02b-93a443462cd4",
               "title": "getContent",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -166,7 +205,7 @@
                   "title": "\"before all\" hook",
                   "fullTitle": "module getContent \"before all\" hook",
                   "timedOut": false,
-                  "duration": 1,
+                  "duration": 0,
                   "state": null,
                   "speed": null,
                   "pass": false,
@@ -175,8 +214,8 @@
                   "context": null,
                   "code": "muk(fs, 'readFile', function (path, encoding, callback) {\n  process.nextTick(function () {\n    callback(new Error(\"mock readFile error\"));\n  });\n});",
                   "err": {},
-                  "uuid": "84546c11-da0a-430f-955a-5a065f7b1e2d",
-                  "parentUUID": "2b4e0607-34a4-4f63-912f-7f356ca32127",
+                  "uuid": "12524b52-87ba-4131-98fa-ddd3d794fdf9",
+                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
                   "isHook": true,
                   "skipped": false
                 }
@@ -195,8 +234,8 @@
                   "context": null,
                   "code": "muk.restore();",
                   "err": {},
-                  "uuid": "ca4a5fe0-47dd-4f57-ac4b-25160bd67619",
-                  "parentUUID": "2b4e0607-34a4-4f63-912f-7f356ca32127",
+                  "uuid": "f97b50e4-2c56-4bca-881d-9a0529e036ff",
+                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
                   "isHook": true,
                   "skipped": false
                 }
@@ -215,15 +254,15 @@
                   "context": null,
                   "code": "lib.getContent('text.txt', function (err, file) {\n  err.should.be.ok();\n  done();\n});",
                   "err": {},
-                  "uuid": "007b5731-fc0a-47b7-b1d5-d94c125b85e0",
-                  "parentUUID": "2b4e0607-34a4-4f63-912f-7f356ca32127",
+                  "uuid": "e4fe088e-63b0-45b2-9af1-5c65264bd8fc",
+                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "007b5731-fc0a-47b7-b1d5-d94c125b85e0"
+                "e4fe088e-63b0-45b2-9af1-5c65264bd8fc"
               ],
               "failures": [],
               "pending": [],
@@ -234,7 +273,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "d3af2641-8862-4de8-a14a-69965f77d254",
+              "uuid": "d7f8dd16-8b19-4234-ae68-c654209ee5cc",
               "title": "add",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -245,7 +284,7 @@
                   "title": "add",
                   "fullTitle": "module add add",
                   "timedOut": false,
-                  "duration": 3,
+                  "duration": 4,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -254,92 +293,15 @@
                   "context": null,
                   "code": "var lib = rewire('../index');\nvar add = lib.__get__('_adding');\nvar sum = add(1, 3);\nsum.should.equal(4);",
                   "err": {},
-                  "uuid": "3787a78b-8dc7-45ad-ab17-228404731243",
-                  "parentUUID": "d3af2641-8862-4de8-a14a-69965f77d254",
+                  "uuid": "99251e53-05a7-455a-a716-85693d93ca6e",
+                  "parentUUID": "d7f8dd16-8b19-4234-ae68-c654209ee5cc",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3787a78b-8dc7-45ad-ab17-228404731243"
-              ],
-              "failures": [],
-              "pending": [],
-              "skipped": [],
-              "duration": 3,
-              "root": false,
-              "rootEmpty": false,
-              "_timeout": 2000
-            }
-          ],
-          "passes": [],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 0,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        },
-        {
-          "uuid": "82528016-a571-4409-8f06-a402f43dff08",
-          "title": "should",
-          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
-          "file": "\\test\\should.test.js",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [],
-          "suites": [
-            {
-              "uuid": "d69d0f98-38b7-4840-a520-f154df662b09",
-              "title": "#Promise",
-              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
-              "file": "\\test\\should.test.js",
-              "beforeHooks": [],
-              "afterHooks": [],
-              "tests": [
-                {
-                  "title": "should.reject",
-                  "fullTitle": "should #Promise should.reject",
-                  "timedOut": false,
-                  "duration": 3,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "new Promise(function (resolve, reject) {\n  reject(new Error('wrong'));\n}).should.be.rejectedWith('wrong');",
-                  "err": {},
-                  "uuid": "0127942f-928e-4375-8045-ee861d756ab7",
-                  "parentUUID": "d69d0f98-38b7-4840-a520-f154df662b09",
-                  "isHook": false,
-                  "skipped": false
-                },
-                {
-                  "title": "should fulfilled",
-                  "fullTitle": "should #Promise should fulfilled",
-                  "timedOut": false,
-                  "duration": 1,
-                  "state": "passed",
-                  "speed": "fast",
-                  "pass": true,
-                  "fail": false,
-                  "pending": false,
-                  "context": null,
-                  "code": "new Promise(function (resolve, reject) {\n  resolve({ username: 'jc', age: 18, gender: 'male' });\n}).should.be.fulfilled().then(function (it) {\n  it.should.have.property('username', 'jc');\n});",
-                  "err": {},
-                  "uuid": "0e69d87e-ac20-4c3d-be01-6a5e7430b3cc",
-                  "parentUUID": "d69d0f98-38b7-4840-a520-f154df662b09",
-                  "isHook": false,
-                  "skipped": false
-                }
-              ],
-              "suites": [],
-              "passes": [
-                "0127942f-928e-4375-8045-ee861d756ab7",
-                "0e69d87e-ac20-4c3d-be01-6a5e7430b3cc"
+                "99251e53-05a7-455a-a716-85693d93ca6e"
               ],
               "failures": [],
               "pending": [],
@@ -360,7 +322,84 @@
           "_timeout": 2000
         },
         {
-          "uuid": "eaacd527-8328-4c91-ae22-87db492122bd",
+          "uuid": "2e85d5c6-2828-4c8d-9522-daf98b4eff20",
+          "title": "should",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
+          "file": "\\test\\should.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+              "title": "#Promise",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
+              "file": "\\test\\should.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should.reject",
+                  "fullTitle": "should #Promise should.reject",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "new Promise(function (resolve, reject) {\n  reject(new Error('wrong'));\n}).should.be.rejectedWith('wrong');",
+                  "err": {},
+                  "uuid": "d0cd192e-57a8-4c4c-83a8-5b8216d36d94",
+                  "parentUUID": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should fulfilled",
+                  "fullTitle": "should #Promise should fulfilled",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "new Promise(function (resolve, reject) {\n  resolve({ username: 'jc', age: 18, gender: 'male' });\n}).should.be.fulfilled().then(function (it) {\n  it.should.have.property('username', 'jc');\n});",
+                  "err": {},
+                  "uuid": "afe114b4-1a56-44ee-8961-a33b939d2862",
+                  "parentUUID": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d0cd192e-57a8-4c4c-83a8-5b8216d36d94",
+                "afe114b4-1a56-44ee-8961-a33b939d2862"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "78c98046-9c97-4065-981f-f4d91bb3fa1f",
           "title": "GET /user",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\web.test.js",
           "file": "\\test\\web.test.js",
@@ -371,7 +410,7 @@
               "title": "respond with json",
               "fullTitle": "GET /user respond with json",
               "timedOut": false,
-              "duration": 32,
+              "duration": 22,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -380,20 +419,20 @@
               "context": null,
               "code": "request(app).get('/user').set('Accept', 'application/json').expect('Content-Type', /json/).expect(200).end(function (err, res) {\n  if (err) {\n    done(err);\n  }\n  res.body.name.should.be.eql('jerryc');\n  done();\n});",
               "err": {},
-              "uuid": "be700890-c4aa-4277-a3fc-ee33e379ee45",
-              "parentUUID": "eaacd527-8328-4c91-ae22-87db492122bd",
+              "uuid": "65298123-9ae0-4ae6-8fad-8abe6527318d",
+              "parentUUID": "78c98046-9c97-4065-981f-f4d91bb3fa1f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "be700890-c4aa-4277-a3fc-ee33e379ee45"
+            "65298123-9ae0-4ae6-8fad-8abe6527318d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 32,
+          "duration": 22,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

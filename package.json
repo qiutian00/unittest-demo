@@ -19,6 +19,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha && istanbul cover index.js",
+    "test2": "mocha --reporter mochawesome",
     "test_gulp": "./node_modules/.bin/gulp",
     "mocha": "./node_modules/.bin/mocha -u bdd",
     "cov":"istanbul cover index.js"
