@@ -1,0 +1,388 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-12T03:22:03.649Z",
+    "end": "2019-06-12T03:22:03.704Z",
+    "duration": 55,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03eae3d2-aa8b-46ed-b91e-9ae54e5573ec",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "adb36083-e266-4b13-aba0-d0d3acbd8406",
+          "title": "module",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
+          "file": "\\test\\index.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "96101aa5-626e-470b-af64-bcd7443a4bde",
+              "title": "limit",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
+              "file": "\\test\\index.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "limit should success",
+                  "fullTitle": "module limit limit should success",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "lib.limit(10).should.equal(10);\nlib.limit(-1).should.be.equal(0);",
+                  "err": {},
+                  "uuid": "08fee37b-cbfa-4f27-8cc0-057486cf17ed",
+                  "parentUUID": "96101aa5-626e-470b-af64-bcd7443a4bde",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "08fee37b-cbfa-4f27-8cc0-057486cf17ed"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "ab15853a-673c-4867-9728-b101c3985339",
+              "title": "async",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
+              "file": "\\test\\index.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "async",
+                  "fullTitle": "module async async",
+                  "timedOut": false,
+                  "duration": 12,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "lib.async(function (result) {\n  done();\n});",
+                  "err": {},
+                  "uuid": "2206e603-5dad-4df6-ad51-6cef743cff3a",
+                  "parentUUID": "ab15853a-673c-4867-9728-b101c3985339",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2206e603-5dad-4df6-ad51-6cef743cff3a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 12,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "64c75c0e-f5aa-4649-8d3d-d71b3cb65b98",
+              "title": "getContent",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
+              "file": "\\test\\index.test.js",
+              "beforeHooks": [
+                {
+                  "title": "\"before all\" hook",
+                  "fullTitle": "module getContent \"before all\" hook",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "muk(fs, 'readFile', function(path, encoding, callback) {\n  process.nextTick(function () {\n    callback(new Error(\"mock readFile error\"));\n  });\n});",
+                  "err": {},
+                  "uuid": "b8e472c9-5a94-4353-bce8-ef83a4945bae",
+                  "parentUUID": "64c75c0e-f5aa-4649-8d3d-d71b3cb65b98",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "afterHooks": [
+                {
+                  "title": "\"after all\" hook",
+                  "fullTitle": "module getContent \"after all\" hook",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "muk.restore();",
+                  "err": {},
+                  "uuid": "52a6e2f1-adf1-4143-b0a6-406174da44cf",
+                  "parentUUID": "64c75c0e-f5aa-4649-8d3d-d71b3cb65b98",
+                  "isHook": true,
+                  "skipped": false
+                }
+              ],
+              "tests": [
+                {
+                  "title": "getContent",
+                  "fullTitle": "module getContent getContent",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "lib.getContent('text.txt', function (err, file) {\n  err.should.be.ok();\n  done();\n})",
+                  "err": {},
+                  "uuid": "3f914088-3c43-4ec6-9f59-425cd3df6ecb",
+                  "parentUUID": "64c75c0e-f5aa-4649-8d3d-d71b3cb65b98",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3f914088-3c43-4ec6-9f59-425cd3df6ecb"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "14df0a73-7a01-412c-b0ee-f983875bb319",
+              "title": "add",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
+              "file": "\\test\\index.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "add",
+                  "fullTitle": "module add add",
+                  "timedOut": false,
+                  "duration": 4,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var lib = rewire('../index');\nvar add = lib.__get__('_adding');\nvar sum = add(1, 3);\nsum.should.equal(4);",
+                  "err": {},
+                  "uuid": "94b1bdc5-3254-4ca3-bed1-3aadd9995f28",
+                  "parentUUID": "14df0a73-7a01-412c-b0ee-f983875bb319",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "94b1bdc5-3254-4ca3-bed1-3aadd9995f28"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 4,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e976b2ab-2a79-4cf6-bbc7-f240073660e7",
+          "title": "should",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
+          "file": "\\test\\should.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "747b3ba8-58b2-488a-83b1-df50b8f50d2b",
+              "title": "#Promise",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
+              "file": "\\test\\should.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should.reject",
+                  "fullTitle": "should #Promise should.reject",
+                  "timedOut": false,
+                  "duration": 2,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(new Promise(function (resolve, reject) {\n  reject(new Error('wrong'));\n})).should.be.rejectedWith('wrong');",
+                  "err": {},
+                  "uuid": "a2b5c231-9971-4b23-860d-de00ba3bf692",
+                  "parentUUID": "747b3ba8-58b2-488a-83b1-df50b8f50d2b",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should fulfilled",
+                  "fullTitle": "should #Promise should fulfilled",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "(new Promise(function (resolve, reject) {\n  resolve({username: 'jc', age: 18, gender: 'male'})\n})).should.be.fulfilled().then(function (it) {\n    it.should.have.property('username', 'jc');\n  })",
+                  "err": {},
+                  "uuid": "061fea79-4e27-4415-948e-581b0a9fe836",
+                  "parentUUID": "747b3ba8-58b2-488a-83b1-df50b8f50d2b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a2b5c231-9971-4b23-860d-de00ba3bf692",
+                "061fea79-4e27-4415-948e-581b0a9fe836"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3c4dff55-1726-48f2-b799-2f63cdc93354",
+          "title": "GET /user",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\web.test.js",
+          "file": "\\test\\web.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "respond with json",
+              "fullTitle": "GET /user respond with json",
+              "timedOut": false,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request(app)\n  .get('/user')\n  .set('Accept', 'application/json')\n  .expect('Content-Type', /json/)\n  .expect(200)\n  .end(function (err, res) {\n    if (err){\n      done(err);\n    }\n    res.body.name.should.be.eql('jerryc');\n    done();\n  })",
+              "err": {},
+              "uuid": "66a67c72-884e-4d7a-8ec7-0a14ad22117d",
+              "parentUUID": "3c4dff55-1726-48f2-b799-2f63cdc93354",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "66a67c72-884e-4d7a-8ec7-0a14ad22117d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.1.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "useInlineDiffs": false
+      },
+      "version": "4.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.0"
+    }
+  }
+}

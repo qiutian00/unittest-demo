@@ -6,6 +6,7 @@
     "bluebird": "^2.9.34",
     "istanbul": "*",
     "mocha": "*",
+    "mochawesome": "^4.0.0",
     "muk": "^0.3.2",
     "rewire": "^2.3.4",
     "should": "^13.2.3",
