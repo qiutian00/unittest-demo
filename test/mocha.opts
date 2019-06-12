@@ -1,6 +1,6 @@
 # mocha.opts
 # --reporter mochawesome
---recursive
---growl
---watch
 --require babel-core/register
+--recursive
+# --growl
+# --watch (wath param is not for ci)
