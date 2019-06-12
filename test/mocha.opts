@@ -1,3 +1,4 @@
 --reporter mochawesome
 --recursive
 --growl
+--watch
