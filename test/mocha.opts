@@ -1,4 +1,6 @@
---reporter mochawesome
+# mocha.opts
+# --reporter mochawesome
 --recursive
 --growl
 --watch
+--require babel-core/register
