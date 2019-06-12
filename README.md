@@ -1,6 +1,7 @@
 # unittest-demo
+js 测试相关 demo
 
-![building pass](https://travis-ci.org/JerryC8080/unittest-demo.svg)
+![building pass](https://travis-ci.org/qiutian00/unittest-demo.svg)
 
 在团队合作中，你写好了一个函数，供队友使用，跑去跟你的队友说，你传个A值进去，他就会返回B结果了。过了一会，你队友跑过来说，我传个A值却返回C结果，怎么回事？你丫的有没有测试过啊？
 
@@ -27,11 +28,16 @@
 
 
 
+
 ## 测试框架
 
 Nodejs的测试框架还用说？大家都在用，Mocha。
 
 Mocha 是一个功能丰富的Javascript测试框架，它能运行在Node.js和浏览器中，支持**BDD**、**TDD**、**QUnit**、**Exports**式的测试，本文主要示例是使用更接近与思考方式的BDD，如果了解更多可以访问Mocha的[官网](http://mochajs.org/)
+
+
+#### Mocha 其他可以参看
+[阮一峰-测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
 
 
 #### 测试接口
@@ -413,7 +419,7 @@ Lines        : 100% ( 10/10 )
 
 这条命令同时还生成了一个 coverage 子目录，其中的 coverage.json 文件包含覆盖率的原始数据，coverage/lcov-report 是可以在浏览器打开的覆盖率报告，其中有详细信息，到底哪些代码没有覆盖到。
 
-![覆盖率html](http://xia-dev.b0.upaiyun.com/eac87dbf-4e4b-426e-80ac-7c50e1b9a1cb.jpg)
+覆盖率效果：可见coverage/mochawesome-report文件夹下html文件
 
 
 
@@ -508,8 +514,6 @@ Travis-cli还会对项目颁发标签，
 是一个开发初期，模拟用户数据的绝佳好库。
 
 支持Node.js和浏览器端。
-
-![生成用户](http://xia-dev.b0.upaiyun.com/43075e5e-026f-4acb-a51f-a998cf1a6e11.jpg)
 
 ## 整理
 
