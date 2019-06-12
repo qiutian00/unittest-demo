@@ -55,7 +55,7 @@ describe('module', function () {
   describe('add', function () {
     it('add', function () {
       var lib = rewire('../index');
-      var add = lib.__get__('_adding');
+      var add = lib.__get__('');
       var sum = add(1, 3);
       sum.should.equal(4);
     });

@@ -7,14 +7,16 @@
  *
  */
 
-var fs = require("fs");
+'use strict';
+
+const fs = require('fs');
 
 exports.limit = function (num) {
   return num < 0 ? 0 : num;
 };
 
 exports.async = function (callback) {
-  setTimeout(function () {
+  setTimeout(() => {
     callback(10);
   }, 10);
 };
