@@ -10,6 +10,18 @@ let formVerify = {
             return true;
         }
         return false;
+    },
+    number: function (numberVal, isSuccess) {
+        if (isSuccess) {
+            if (!(/^$|^[0-9]*$/).test(numberVal)) {
+                // layerMsg.checkFail("请输入整数!");
+                // obj.addClass("layui-form-danger");
+                // obj.focus();
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 }
 

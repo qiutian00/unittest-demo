@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 10,
-    "tests": 9,
-    "passes": 8,
+    "suites": 13,
+    "tests": 20,
+    "passes": 17,
     "pending": 0,
-    "failures": 1,
-    "start": "2019-06-12T08:00:21.627Z",
-    "end": "2019-06-12T08:00:21.698Z",
-    "duration": 71,
-    "testsRegistered": 9,
-    "passPercent": 88.88888888888889,
+    "failures": 3,
+    "start": "2019-06-12T08:17:24.050Z",
+    "end": "2019-06-12T08:17:24.131Z",
+    "duration": 81,
+    "testsRegistered": 20,
+    "passPercent": 85,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "278f3047-0194-4643-ad5c-86931b50b04d",
+      "uuid": "b4a40811-6069-4cb5-8324-75c62605de41",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "59133d1d-8344-4815-a2ff-3ca542f687aa",
+          "uuid": "ec085222-ce7a-41d4-96c5-54a4ab64ba20",
           "title": "加法函数的测试",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\add.test.js",
           "file": "\\test\\add.test.js",
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: expected 3 to equal 2\n    at Context.<anonymous> (F:/Code/projects/unittest-demo/test/add.test.js:12:29)",
                 "diff": "- 3\n+ 2\n"
               },
-              "uuid": "162c71e2-1fc3-4b6f-8aec-19fd26840fbc",
-              "parentUUID": "59133d1d-8344-4815-a2ff-3ca542f687aa",
+              "uuid": "d3367b89-80d5-4337-b77f-50e97e630584",
+              "parentUUID": "ec085222-ce7a-41d4-96c5-54a4ab64ba20",
               "isHook": false,
               "skipped": false
             }
@@ -60,7 +60,7 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "162c71e2-1fc3-4b6f-8aec-19fd26840fbc"
+            "d3367b89-80d5-4337-b77f-50e97e630584"
           ],
           "pending": [],
           "skipped": [],
@@ -70,36 +70,189 @@
           "_timeout": 2000
         },
         {
-          "uuid": "1e1300d8-4bfe-4ba6-8642-2284f8ec7900",
+          "uuid": "afc44d79-e4de-4b17-bcca-ef76b2e91842",
           "title": "formVerify 验证",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\formVerify.test.js",
           "file": "\\test\\formVerify.test.js",
           "beforeHooks": [],
           "afterHooks": [],
-          "tests": [
+          "tests": [],
+          "suites": [
             {
+              "uuid": "cea62ccf-6841-42f7-bd2a-52fbf61a94ab",
               "title": "手机或者座机验证",
-              "fullTitle": "formVerify 验证 手机或者座机验证",
-              "timedOut": false,
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\formVerify.test.js",
+              "file": "\\test\\formVerify.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "正常手机号",
+                  "fullTitle": "formVerify 验证 手机或者座机验证 正常手机号",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.phone('13344445555', isSuccess)).to.be.true;",
+                  "err": {},
+                  "uuid": "b7cdfc97-0c36-4ec3-91f6-f96377377d89",
+                  "parentUUID": "cea62ccf-6841-42f7-bd2a-52fbf61a94ab",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "不正常手机号",
+                  "fullTitle": "formVerify 验证 手机或者座机验证 不正常手机号",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.phone('1334444555', isSuccess)).to.be.false;",
+                  "err": {},
+                  "uuid": "3a85dfe2-ca16-474c-850b-28ff0e364e03",
+                  "parentUUID": "cea62ccf-6841-42f7-bd2a-52fbf61a94ab",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "正常座机号",
+                  "fullTitle": "formVerify 验证 手机或者座机验证 正常座机号",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.phone('0731-84153885', isSuccess)).to.be.true;",
+                  "err": {},
+                  "uuid": "dd3e88fc-00fa-4b1a-b818-b6b9815da59a",
+                  "parentUUID": "cea62ccf-6841-42f7-bd2a-52fbf61a94ab",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "不正常座机号",
+                  "fullTitle": "formVerify 验证 手机或者座机验证 不正常座机号",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.phone('0731sdfsd', isSuccess)).to.be.false;",
+                  "err": {},
+                  "uuid": "8b7a24f8-f255-4873-be64-b4707b4bd3b8",
+                  "parentUUID": "cea62ccf-6841-42f7-bd2a-52fbf61a94ab",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b7cdfc97-0c36-4ec3-91f6-f96377377d89",
+                "3a85dfe2-ca16-474c-850b-28ff0e364e03",
+                "dd3e88fc-00fa-4b1a-b818-b6b9815da59a",
+                "8b7a24f8-f255-4873-be64-b4707b4bd3b8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "05006f04-31f5-4c74-bce1-ad9b3ac69dd1",
+              "title": "正整数校验",
+              "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\formVerify.test.js",
+              "file": "\\test\\formVerify.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "正数",
+                  "fullTitle": "formVerify 验证 正整数校验 正数",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.number('8', isSuccess)).to.be.true;",
+                  "err": {},
+                  "uuid": "a684395b-6d2d-4841-a83a-8dd08cbb4d5f",
+                  "parentUUID": "05006f04-31f5-4c74-bce1-ad9b3ac69dd1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "负数",
+                  "fullTitle": "formVerify 验证 正整数校验 负数",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.number('-8', isSuccess)).to.be.false;",
+                  "err": {},
+                  "uuid": "229c8fa1-74c5-4750-b10e-edd87c4ffd07",
+                  "parentUUID": "05006f04-31f5-4c74-bce1-ad9b3ac69dd1",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "临界值",
+                  "fullTitle": "formVerify 验证 正整数校验 临界值",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(_formVerify2.default.number('0', isSuccess)).to.be.true;",
+                  "err": {},
+                  "uuid": "68af3dd7-3578-4c68-83e4-4ceefb145ad4",
+                  "parentUUID": "05006f04-31f5-4c74-bce1-ad9b3ac69dd1",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a684395b-6d2d-4841-a83a-8dd08cbb4d5f",
+                "229c8fa1-74c5-4750-b10e-edd87c4ffd07",
+                "68af3dd7-3578-4c68-83e4-4ceefb145ad4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
               "duration": 0,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "expect(_formVerify2.default.phone('13344445555', isSuccess)).to.be.true;",
-              "err": {},
-              "uuid": "ff0a6c51-91f7-40c4-9b79-755c0e63c89a",
-              "parentUUID": "1e1300d8-4bfe-4ba6-8642-2284f8ec7900",
-              "isHook": false,
-              "skipped": false
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
             }
           ],
-          "suites": [],
-          "passes": [
-            "ff0a6c51-91f7-40c4-9b79-755c0e63c89a"
-          ],
+          "passes": [],
           "failures": [],
           "pending": [],
           "skipped": [],
@@ -109,7 +262,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "479449d5-745a-4af7-b382-7d24fd29fa70",
+          "uuid": "09485f9f-8dfd-4fb8-960a-244359e1e9fb",
           "title": "module",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
           "file": "\\test\\index.test.js",
@@ -118,7 +271,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "c511cb94-24a5-49c9-9c59-7bab519f8851",
+              "uuid": "e1000128-8c94-4a27-9ce6-aff8ae5f9236",
               "title": "limit",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -138,15 +291,15 @@
                   "context": null,
                   "code": "lib.limit(10).should.equal(10);\nlib.limit(-1).should.be.equal(0);",
                   "err": {},
-                  "uuid": "eaf8acbe-b3ad-4663-95c9-57658b136f54",
-                  "parentUUID": "c511cb94-24a5-49c9-9c59-7bab519f8851",
+                  "uuid": "56818c6e-d53e-41bf-9439-7359aa1a1984",
+                  "parentUUID": "e1000128-8c94-4a27-9ce6-aff8ae5f9236",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "eaf8acbe-b3ad-4663-95c9-57658b136f54"
+                "56818c6e-d53e-41bf-9439-7359aa1a1984"
               ],
               "failures": [],
               "pending": [],
@@ -157,7 +310,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "7b5466a4-989e-4af6-b677-28a5acdbc48f",
+              "uuid": "08870a7a-463e-4ff9-a90a-769f955a3db9",
               "title": "async",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -168,7 +321,7 @@
                   "title": "async",
                   "fullTitle": "module async async",
                   "timedOut": false,
-                  "duration": 10,
+                  "duration": 11,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -177,26 +330,26 @@
                   "context": null,
                   "code": "lib.async(function (result) {\n  done();\n});",
                   "err": {},
-                  "uuid": "1aeab9a8-0034-43ce-8782-dd67eba02b3e",
-                  "parentUUID": "7b5466a4-989e-4af6-b677-28a5acdbc48f",
+                  "uuid": "da421908-f519-4ff9-b72b-4af8a4c63dcc",
+                  "parentUUID": "08870a7a-463e-4ff9-a90a-769f955a3db9",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "1aeab9a8-0034-43ce-8782-dd67eba02b3e"
+                "da421908-f519-4ff9-b72b-4af8a4c63dcc"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 10,
+              "duration": 11,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "88596f51-154f-443c-a02b-93a443462cd4",
+              "uuid": "fd47db08-5267-4227-8382-8771483448bf",
               "title": "getContent",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -214,8 +367,8 @@
                   "context": null,
                   "code": "muk(fs, 'readFile', function (path, encoding, callback) {\n  process.nextTick(function () {\n    callback(new Error(\"mock readFile error\"));\n  });\n});",
                   "err": {},
-                  "uuid": "12524b52-87ba-4131-98fa-ddd3d794fdf9",
-                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
+                  "uuid": "8b949ee4-214c-4c10-8ac5-7a06daeb79f5",
+                  "parentUUID": "fd47db08-5267-4227-8382-8771483448bf",
                   "isHook": true,
                   "skipped": false
                 }
@@ -234,8 +387,8 @@
                   "context": null,
                   "code": "muk.restore();",
                   "err": {},
-                  "uuid": "f97b50e4-2c56-4bca-881d-9a0529e036ff",
-                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
+                  "uuid": "105f9899-045d-42ff-ab42-802b36a6e078",
+                  "parentUUID": "fd47db08-5267-4227-8382-8771483448bf",
                   "isHook": true,
                   "skipped": false
                 }
@@ -254,15 +407,15 @@
                   "context": null,
                   "code": "lib.getContent('text.txt', function (err, file) {\n  err.should.be.ok();\n  done();\n});",
                   "err": {},
-                  "uuid": "e4fe088e-63b0-45b2-9af1-5c65264bd8fc",
-                  "parentUUID": "88596f51-154f-443c-a02b-93a443462cd4",
+                  "uuid": "fcd269e2-46f4-48ff-b387-c26520584d36",
+                  "parentUUID": "fd47db08-5267-4227-8382-8771483448bf",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e4fe088e-63b0-45b2-9af1-5c65264bd8fc"
+                "fcd269e2-46f4-48ff-b387-c26520584d36"
               ],
               "failures": [],
               "pending": [],
@@ -273,7 +426,7 @@
               "_timeout": 2000
             },
             {
-              "uuid": "d7f8dd16-8b19-4234-ae68-c654209ee5cc",
+              "uuid": "8326a134-2803-4390-91aa-22a5448cdb33",
               "title": "add",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\index.test.js",
               "file": "\\test\\index.test.js",
@@ -284,7 +437,7 @@
                   "title": "add",
                   "fullTitle": "module add add",
                   "timedOut": false,
-                  "duration": 4,
+                  "duration": 3,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -293,20 +446,20 @@
                   "context": null,
                   "code": "var lib = rewire('../index');\nvar add = lib.__get__('_adding');\nvar sum = add(1, 3);\nsum.should.equal(4);",
                   "err": {},
-                  "uuid": "99251e53-05a7-455a-a716-85693d93ca6e",
-                  "parentUUID": "d7f8dd16-8b19-4234-ae68-c654209ee5cc",
+                  "uuid": "7b22119b-bde6-4ee3-942f-7fdcd110cab9",
+                  "parentUUID": "8326a134-2803-4390-91aa-22a5448cdb33",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "99251e53-05a7-455a-a716-85693d93ca6e"
+                "7b22119b-bde6-4ee3-942f-7fdcd110cab9"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 4,
+              "duration": 3,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -322,7 +475,131 @@
           "_timeout": 2000
         },
         {
-          "uuid": "2e85d5c6-2828-4c8d-9522-daf98b4eff20",
+          "uuid": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+          "title": "null or undefined or ''",
+          "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\null.test.js",
+          "file": "\\test\\null.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "null校验",
+              "fullTitle": "null or undefined or '' null校验",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect('null').to.be.empty;",
+              "err": {
+                "message": "AssertionError: expected 'null' to be empty",
+                "estack": "AssertionError: expected 'null' to be empty\n    at Context.<anonymous> (F:/Code/projects/unittest-demo/test/null.test.js:9:9)",
+                "diff": null
+              },
+              "uuid": "95507d69-91cb-48d2-bcea-93c50cbe8cd0",
+              "parentUUID": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "undefined校验",
+              "fullTitle": "null or undefined or '' undefined校验",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(undefined).to.be.empty;",
+              "err": {
+                "message": "AssertionError: .empty was passed non-string primitive undefined",
+                "estack": "AssertionError: .empty was passed non-string primitive undefined\n    at Context.<anonymous> (F:/Code/projects/unittest-demo/test/null.test.js:12:9)",
+                "diff": null
+              },
+              "uuid": "18d19725-838f-48fb-8b9f-d0ab330893fa",
+              "parentUUID": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "''校验",
+              "fullTitle": "null or undefined or '' ''校验",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect('').to.be.empty;",
+              "err": {},
+              "uuid": "292462d3-2b85-454b-8edb-96512b5689a9",
+              "parentUUID": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "[]校验",
+              "fullTitle": "null or undefined or '' []校验",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect([]).to.be.empty;",
+              "err": {},
+              "uuid": "a174afaa-0e36-4e2e-bc59-e7a225822339",
+              "parentUUID": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "{}校验",
+              "fullTitle": "null or undefined or '' {}校验",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect({}).to.be.empty;",
+              "err": {},
+              "uuid": "77d3b54f-dec4-4f14-bc60-288a66339872",
+              "parentUUID": "a233dc53-ac11-4caa-8eb9-d33eef4e581e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "292462d3-2b85-454b-8edb-96512b5689a9",
+            "a174afaa-0e36-4e2e-bc59-e7a225822339",
+            "77d3b54f-dec4-4f14-bc60-288a66339872"
+          ],
+          "failures": [
+            "95507d69-91cb-48d2-bcea-93c50cbe8cd0",
+            "18d19725-838f-48fb-8b9f-d0ab330893fa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "11a09d40-9d86-4893-9a1b-13d65c8007a1",
           "title": "should",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
           "file": "\\test\\should.test.js",
@@ -331,7 +608,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+              "uuid": "a47a7e71-e7e3-43e2-9146-282ffa2a207a",
               "title": "#Promise",
               "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\should.test.js",
               "file": "\\test\\should.test.js",
@@ -351,8 +628,8 @@
                   "context": null,
                   "code": "new Promise(function (resolve, reject) {\n  reject(new Error('wrong'));\n}).should.be.rejectedWith('wrong');",
                   "err": {},
-                  "uuid": "d0cd192e-57a8-4c4c-83a8-5b8216d36d94",
-                  "parentUUID": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+                  "uuid": "f0a864f2-77c4-43d8-b50a-25f89d8faf04",
+                  "parentUUID": "a47a7e71-e7e3-43e2-9146-282ffa2a207a",
                   "isHook": false,
                   "skipped": false
                 },
@@ -369,16 +646,16 @@
                   "context": null,
                   "code": "new Promise(function (resolve, reject) {\n  resolve({ username: 'jc', age: 18, gender: 'male' });\n}).should.be.fulfilled().then(function (it) {\n  it.should.have.property('username', 'jc');\n});",
                   "err": {},
-                  "uuid": "afe114b4-1a56-44ee-8961-a33b939d2862",
-                  "parentUUID": "a8af9f94-3e45-4059-8dbc-2e7a25d334be",
+                  "uuid": "fa859b3c-d16b-46a8-8c1c-c55a9832c20b",
+                  "parentUUID": "a47a7e71-e7e3-43e2-9146-282ffa2a207a",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "d0cd192e-57a8-4c4c-83a8-5b8216d36d94",
-                "afe114b4-1a56-44ee-8961-a33b939d2862"
+                "f0a864f2-77c4-43d8-b50a-25f89d8faf04",
+                "fa859b3c-d16b-46a8-8c1c-c55a9832c20b"
               ],
               "failures": [],
               "pending": [],
@@ -399,7 +676,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "78c98046-9c97-4065-981f-f4d91bb3fa1f",
+          "uuid": "190869e0-737b-4efd-81cb-154b144f4218",
           "title": "GET /user",
           "fullFile": "F:\\Code\\projects\\unittest-demo\\test\\web.test.js",
           "file": "\\test\\web.test.js",
@@ -410,7 +687,7 @@
               "title": "respond with json",
               "fullTitle": "GET /user respond with json",
               "timedOut": false,
-              "duration": 22,
+              "duration": 23,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -419,20 +696,20 @@
               "context": null,
               "code": "request(app).get('/user').set('Accept', 'application/json').expect('Content-Type', /json/).expect(200).end(function (err, res) {\n  if (err) {\n    done(err);\n  }\n  res.body.name.should.be.eql('jerryc');\n  done();\n});",
               "err": {},
-              "uuid": "65298123-9ae0-4ae6-8fad-8abe6527318d",
-              "parentUUID": "78c98046-9c97-4065-981f-f4d91bb3fa1f",
+              "uuid": "9657953c-7a4f-4780-a49c-6344ce50b358",
+              "parentUUID": "190869e0-737b-4efd-81cb-154b144f4218",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "65298123-9ae0-4ae6-8fad-8abe6527318d"
+            "9657953c-7a4f-4780-a49c-6344ce50b358"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 22,
+          "duration": 23,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
