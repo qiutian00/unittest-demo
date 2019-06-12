@@ -9,6 +9,7 @@
     "chai": "^4.2.0",
     "expect.js": "^0.3.1",
     "istanbul": "*",
+    "lodash": "^4.17.11",
     "mocha": "*",
     "mochawesome": "^4.0.0",
     "muk": "^0.3.2",
@@ -22,7 +23,7 @@
     "test2": "mocha --reporter mochawesome",
     "test_gulp": "./node_modules/.bin/gulp",
     "mocha": "./node_modules/.bin/mocha -u bdd",
-    "cov":"istanbul cover index.js"
+    "cov": "istanbul cover index.js"
   },
   "author": "JerryC",
   "license": "ISC",
