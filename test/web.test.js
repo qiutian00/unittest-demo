@@ -9,6 +9,7 @@
 
 var express = require("express");
 var request = require("supertest");
+var should = require('should');
 
 var app = express();
 

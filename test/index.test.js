@@ -10,13 +10,14 @@ var lib = require("../index");
 var fs = require('fs');
 var muk = require("muk");
 var rewire = require("rewire");
+var should = require('should');
 
 describe('module', function () {
 
   // 普通测试
   describe('limit', function () {
     it('limit should success', function () {
-      lib.limit(10).should.be.equal(10);
+      lib.limit(10).should.equal(10);
       lib.limit(-1).should.be.equal(0);
     });
   });

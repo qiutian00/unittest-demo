@@ -7,6 +7,7 @@
  *
  */
 var Promise = require("bluebird");
+var should = require('should');
 
 describe('should', function () {
   describe('#Promise', function () {
